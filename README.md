@@ -11,7 +11,7 @@ Quick start on OSX:
       -e DOCKER_CERT_PATH=$DOCKER_CERT_PATH \
       --volume $HOME:$HOME \
       --volume $HOME/.ssh:/home/dev/.ssh \
-      --workdir $HOME/work \  # or wherever you do your work (must be inside $PWD)
+      --workdir $HOME/work \  # or wherever you do your work (must be inside $HOME)
       --name dev_shell \
       qxjit/dev_shell
 
