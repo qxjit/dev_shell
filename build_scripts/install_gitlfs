@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+
+curl -L https://github.com/github/git-lfs/releases/download/v$GIT_LFS_VERSION/git-lfs-linux-amd64-$GIT_LFS_VERSION.tar.gz \
+     -o /git-lfs.tar.gz
+
+tar xfz git-lfs.tar.gz
+
+cd /git-lfs-$GIT_LFS_VERSION
+./install.sh
+cd /
+rm -r git-lfs-$GIT_LFS_VERSION
+rm git-lfs.tar.gz
+

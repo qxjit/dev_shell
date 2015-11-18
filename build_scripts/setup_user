@@ -1,0 +1,12 @@
+#!/bin/sh
+
+PASSWORD=$(echo dev | openssl passwd -1 -stdin)
+useradd dev \
+        --create-home \
+        --shell /usr/bin/fish \
+        --groups sudo,docker \
+        --password $PASSWORD
+
+sudo -u dev mkdir /home/dev/work
+sudo -u dev git-lfs init
+
