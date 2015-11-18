@@ -15,3 +15,10 @@ Quick start on OSX:
       --name dev_shell \
       qxjit/dev_shell
 
+## Faster FS access
+
+The virtualbox share can be very close, especially for things like Ag. You will
+probably want this:
+
+[https://quip.com/EDYLAAfuup5M](https://quip.com/EDYLAAfuup5M)
+
