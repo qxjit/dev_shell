@@ -8,5 +8,4 @@ useradd dev \
         --password $PASSWORD
 
 sudo -u dev mkdir /home/dev/work
-sudo -u dev git-lfs init
 

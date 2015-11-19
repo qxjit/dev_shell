@@ -1,4 +1,8 @@
 #!/usr/bin/fish -l
 
+git_introduce
+git_simple_push
+git_lfs_init
+
 env TERM=xterm-256color tmux
 

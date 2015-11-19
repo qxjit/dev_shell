@@ -17,6 +17,7 @@ COPY build_scripts/setup_user /build_scripts/setup_user
 RUN /build_scripts/setup_user
 
 ADD vim /home/dev/.vim
+ADD fish /home/dev/.config/fish
 
 RUN ln -s /home/dev/.vim/vimrc /home/dev/.vimrc
 COPY tmux.conf /home/dev/.tmux.conf
