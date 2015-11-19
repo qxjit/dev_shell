@@ -9,6 +9,8 @@ Quick start on OSX:
       -e DOCKER_HOST=$DOCKER_HOST \
       -e DOCKER_TLS_VERIFY=$DOCKER_TLS_VERIFY \
       -e DOCKER_CERT_PATH=$DOCKER_CERT_PATH \
+      -e GIT_NAME="Your name for git commits" \
+      -e GIT_EMAIL="Your email for git commits" \
       --volume $HOME:$HOME \
       --volume $HOME/.ssh:/home/dev/.ssh \
       --workdir $HOME/work \  # or wherever you do your work (must be inside $HOME)
