@@ -1,7 +1,4 @@
-#!/bin/sh
+#!/usr/bin/fish -l
 
-set -e
-
-export TERM=xterm-256color
-tmux
+env TERM=xterm-256color tmux
 
