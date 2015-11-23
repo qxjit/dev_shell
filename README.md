@@ -1,7 +1,7 @@
 Dockerize Dev Shell
 ===================
 
-Quick start on OSX:
+## OSX Quick start
    
     eval $(docker-machine env dev)
     docker run \
@@ -17,10 +17,25 @@ Quick start on OSX:
       --name dev_shell \
       qxjit/dev_shell
 
-## Faster FS access
+### Faster FS access
 
 The virtualbox share can be very slow, especially for things like Ag. You will
 probably want this:
 
 [https://quip.com/EDYLAAfuup5M](https://quip.com/EDYLAAfuup5M)
+
+## Linux QuickStart
+
+    docker run \
+      -it \
+      --volume $HOME/.ssh:/home/dev/.ssh \
+      --volume $HOME:$HOME \
+      --volume /var/run/docker.sock:/var/run/docker.sock \
+      --workdir $HOME/work \
+      -e GIT_NAME="Your name for git commits" \
+      -e GIT_EMAIL="Your email for git commits" \
+      --name dev_shell \
+      --privileged \
+      qxjit/dev_shell
+
 
