@@ -26,3 +26,15 @@ set hlsearch
 
 silent !mkdir -p /tmp/vim
 set dir=/tmp/vim//
+
+" Highlight trailing whitespace
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd BufRead,InsertLeave * match ExtraWhitespace /\s\+$/
+" Set up highlight group & retain through colorscheme changes
+highlight ExtraWhitespace ctermbg=88 guibg=red
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=88 guibg=red
+
+" Highlight too-long lines
+autocmd BufRead,InsertEnter,InsertLeave * 2match LineLengthError /\%76v.*/
+highlight LineLengthError ctermbg=58 guibg=gold4
+autocmd ColorScheme * highlight LineLengthError ctermbg=58 guibg=gold4
