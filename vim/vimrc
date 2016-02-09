@@ -4,7 +4,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-colorscheme vividchalk
+colorscheme wombat256
 
 map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
 map <silent> <LocalLeader>nr :NERDTree<CR>
