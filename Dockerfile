@@ -11,6 +11,9 @@ ENV GIT_LFS_VERSION 1.0.2
 COPY build_scripts/install_gitlfs /build_scripts/install_gitlfs
 RUN /build_scripts/install_gitlfs
 
+COPY build_scripts/install_awscli /build_scripts/install_awscli
+RUN /build_scripts/install_awscli
+
 RUN locale-gen en_US.UTF-8
 
 COPY build_scripts/setup_user /build_scripts/setup_user
