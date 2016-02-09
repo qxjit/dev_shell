@@ -12,3 +12,5 @@ cd /
 rm -r /tmux-$TMUX_VERSION
 rm /tmux.tar.gz
 
+gem install --no-rdoc --no-ri tmuxinator
+
