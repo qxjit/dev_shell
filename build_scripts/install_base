@@ -27,7 +27,8 @@ apt-get install -y --no-install-recommends \
         fish=2.2.0-1~trusty \
         vim=2:7.4.052-1ubuntu3 \
         silversearcher-ag=0.19.2-1 \
-        time=1.7-24
+        time=1.7-24 \
+        libxml2-utils=2.9.1+dfsg1-3ubuntu4.7
 
 apt-get clean
 
