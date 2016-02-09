@@ -17,18 +17,20 @@ apt-get update
 
 apt-get install -y --no-install-recommends \
         build-essential \
-        libevent-dev \
-        libncurses5-dev \
-        ssh \
-        wget \
         curl \
-        git \
         docker-engine \
         fish \
-        vim \
+        git \
+        libevent-dev \
+        libncurses5-dev \
+        libxml2-utils \
+        unzip \
+        ruby \
         silversearcher-ag \
+        ssh \
         time \
-        libxml2-utils
+        vim \
+        wget
 
 apt-get clean
 
