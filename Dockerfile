@@ -34,3 +34,4 @@ COPY build_scripts/run /build_scripts/run
 CMD ["/build_scripts/run"]
 
 USER dev
+ENV EDITOR vim
